@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="description" content="LEONG CHI LONG (梁梓龍) - Computer Science Student Portfolio">
+    <title>LEONG CHI LONG | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#home" class="logo">Chi Long</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="hero-content">
+                <h1>LEONG CHI LONG</h1>
+                <p class="subtitle">梁梓龍 | Computer Science Student</p>
+                <p class="tagline">Passionate about cybersecurity, software development, and continuous learning. Building secure and innovative solutions for tomorrow.</p>
+                <a href="#about" class="cta-button">Discover More</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I am a computer science student focused on cybersecurity and software development, with a calm and steady personality. I take my work seriously and possess a proactive attitude.</p>
+                        <p>Technically, I have a solid programming foundation, frequently working with languages like Python and Go, and I continuously learn in the field of cybersecurity through participation in multiple CTF competitions and innovative projects, as well as obtaining the National Information Security Test Program (NISP) Level 1 certificate, demonstrating strong problem analysis and solving skills.</p>
+                        <p>Additionally, during my time as an extracurricular teaching assistant at Saint Joseph School in Macau (Fifth School) and as a student assistant in the Information Technology Innovation Group at Macau Jingping Middle School, I not only accumulated rich teamwork experience but also showcased excellent project communication abilities.</p>
+                        
+                        <table class="info-table">
+                            <caption class="visually-hidden">Personal Information</caption>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Name</th>
+                                    <td>LEONG CHI LONG (梁梓龍)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Student ID</th>
+                                    <td>DC227153</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Major</th>
+                                    <td>Computer Science</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Year</th>
+                                    <td>Year 4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Email</th>
+                                    <td><a href="mailto:DC22715@umac.mo">DC22715@umac.mo</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="photo-gallery">
+                        <img src="../images/photo1.jpg" alt="Chi Long at a cybersecurity competition" width="300" height="200">
+                        <img src="../images/photo2.jpg" alt="Chi Long presenting a project" width="300" height="200">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values & Beliefs Section -->
+        <section id="values">
+            <div class="container">
+                <h2 class="section-title">My Values &amp; Beliefs</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <p>These core principles guide my approach to work, learning, and life.</p>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon" aria-hidden="true">🔐</div>
+                        <h3>Security First</h3>
+                        <p>I believe in building secure systems from the ground up. Security is not an afterthought but a fundamental aspect of every project.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon" aria-hidden="true">📚</div>
+                        <h3>Continuous Learning</h3>
+                        <p>Technology evolves rapidly. I am committed to staying current with the latest developments in AI, IoT, and cybersecurity.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon" aria-hidden="true">🤝</div>
+                        <h3>Collaboration</h3>
+                        <p>Great achievements come from great teams. I value open communication, knowledge sharing, and working together toward common goals.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon" aria-hidden="true">💡</div>
+                        <h3>Innovation</h3>
+                        <p>I strive to think creatively and find novel solutions to complex problems. Innovation drives progress and creates value.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon" aria-hidden="true">⚖️</div>
+                        <h3>Integrity</h3>
+                        <p>Ethical behavior and honesty are non-negotiable. I believe in doing the right thing, even when no one is watching.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon" aria-hidden="true">🎯</div>
+                        <h3>Excellence</h3>
+                        <p>I pursue quality in everything I do. Good enough is not enough—I aim for excellence in my work and continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Aspirations Section -->
+        <section id="career">
+            <div class="container">
+                <h2 class="section-title">My Career Aspirations</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <div class="career-content">
+                    <div>
+                        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--color-primary);">Work Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024/08 – Present</div>
+                                <div class="timeline-title">Siemens (Macau)</div>
+                                <div class="timeline-desc">Part-time job</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2025/02 – 2025/07</div>
+                                <div class="timeline-title">MOCSCTF "菜鳥黑客松2025" Competition</div>
+                                <div class="timeline-desc">Development of the official website and competition platform</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024/06 – 2024/07</div>
+                                <div class="timeline-title">Siemens (Macau)</div>
+                                <div class="timeline-desc">Intern</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024/04 – 2024/06</div>
+                                <div class="timeline-title">Macau Junyi Education Center</div>
+                                <div class="timeline-desc">Python Teaching Mentor</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023/10 – 2024/06</div>
+                                <div class="timeline-title">St. Joseph Secondary School 5 Macao</div>
+                                <div class="timeline-desc">Extracurricular Activities Assistant Mentor</div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022/05 – 2023/06</div>
+                                <div class="timeline-title">Macau KeangPeng Middle School</div>
+                                <div class="timeline-desc">Information Technology Innovation Group Student Assistant</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aspirations-box">
+                        <h3>Career Goals</h3>
+                        <ul>
+                            <li>Become a cybersecurity expert specializing in penetration testing and security auditing</li>
+                            <li>Contribute to open-source security tools and frameworks</li>
+                            <li>Lead innovative projects at the intersection of AI and cybersecurity</li>
+                            <li>Gain diverse experiences through various internships to enhance my skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests & Hobbies Section -->
+        <section id="interests">
+            <div class="container">
+                <h2 class="section-title">My Interests &amp; Hobbies</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <div class="interests-grid">
+                    <div class="interest-card">
+                        <img src="../images/security.jpg" alt="Cybersecurity concept illustration" width="300" height="150" loading="lazy">
+                        <h3>Cybersecurity &amp; CTF</h3>
+                        <p>Actively participate in various CTF competitions and continuously learn the latest security technologies.</p>
+                    </div>
+                    <div class="interest-card">
+                        <img src="../images/coding.jpg" alt="Programming code on screen" width="300" height="150" loading="lazy">
+                        <h3>Programming</h3>
+                        <p>Familiar with Arduino C, Python, and Go. Passionate about developing innovative projects and tools.</p>
+                    </div>
+                    <div class="interest-card">
+                        <img src="../images/interest-tech.jpg" alt="Emerging technology devices" width="300" height="150" loading="lazy">
+                        <h3>Technical Exploration</h3>
+                        <p>Maintain a strong interest in emerging technologies, especially AI, IoT, and related fields.</p>
+                    </div>
+                </div>
+
+                <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin: 3rem 0 1rem; color: var(--color-primary);">Achievements &amp; Certifications</h3>
+                <table class="achievements-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Event / Certification</th>
+                            <th scope="col">Achievement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025/09</td>
+                            <td>2025 Bay Area Cup Cybersecurity Competition</td>
+                            <td>HK &amp; Macau Division – 2nd Place (Preliminary), 6th Place (Finals)</td>
+                        </tr>
+                        <tr>
+                            <td>2025/04</td>
+                            <td>National Information Security Test Program</td>
+                            <td>Level 1 Certificate</td>
+                        </tr>
+                        <tr>
+                            <td>2024/12</td>
+                            <td>18th National College Student Information Security Competition</td>
+                            <td>Ranked 765th Nationally</td>
+                        </tr>
+                        <tr>
+                            <td>2024/11</td>
+                            <td>8th Annual Hack A Day by PwC Hong Kong</td>
+                            <td>6th Place in Hong Kong &amp; Macau</td>
+                        </tr>
+                        <tr>
+                            <td>2024/09</td>
+                            <td>2024 "Yangcheng Cup" Cyber Security Competition</td>
+                            <td>Winning Prize</td>
+                        </tr>
+                        <tr>
+                            <td>2024/06</td>
+                            <td>MOCSCTF Rookie Hackathon 2024</td>
+                            <td>16th Place (Open Category)</td>
+                        </tr>
+                        <tr>
+                            <td>2023/11</td>
+                            <td>Dao Yuan Intelligence AI Innovation Symposium</td>
+                            <td>Most Interesting Project Award</td>
+                        </tr>
+                        <tr>
+                            <td>2023/03</td>
+                            <td>MOCSCTF Rookie Hackathon 2023</td>
+                            <td>University of Macau Runner-up</td>
+                        </tr>
+                        <tr>
+                            <td>2019/07</td>
+                            <td>17th National Primary and Secondary School Network Originality Competition</td>
+                            <td>National 2nd Prize, Macau Runner-up</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <div class="container">
+                <h2 class="section-title">My Blog Posts</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <img src="../images/blog1.jpg" alt="MOCSCTF Rookie Hackathon 2025 Platform Development" width="400" height="200" loading="lazy">
+                        <div class="blog-card-content">
+                            <time class="blog-card-date" datetime="2025-02-01">February – July 2025</time>
+                            <h3>MOCSCTF Rookie Hackathon 2025 Platform Development</h3>
+                            <p>As a member of the MOCSCTF "Rookie Hackathon 2025" technical team, I was responsible for developing the official website and competition platform. From requirements analysis, system architecture design to full-stack development and deployment, I participated in the entire project lifecycle, gaining valuable hands-on development experience…</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="../images/blog2.jpg" alt="18th National College Student Information Security Competition" width="400" height="200" loading="lazy">
+                        <div class="blog-card-content">
+                            <time class="blog-card-date" datetime="2024-12-01">March 2025</time>
+                            <h3>18th National Information Security Competition Experience</h3>
+                            <p>Participated in the 18th National College Student Information Security Competition (Innovation Practice Ability) and the 2nd "Great Wall Cup" Triathlon (Defense Competition), achieving rank 765th nationally among numerous university teams. This competition deepened my understanding of cybersecurity professionalism and the importance of continuous learning and teamwork…</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <img src="../images/blog3.jpg" alt="PwC Hack A Day Competition" width="400" height="200" loading="lazy">
+                        <div class="blog-card-content">
+                            <time class="blog-card-date" datetime="2024-11-01">November 2024</time>
+                            <h3>PwC Hack A Day Cybersecurity Competition Experience</h3>
+                            <p>Participated in the 8th Annual Hack A Day Cybersecurity Competition hosted by PwC Hong Kong, achieving 6th place in the Hong Kong &amp; Macau region. The competition covered penetration testing, vulnerability discovery, and incident response, providing a challenging and valuable learning experience…</p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-divider" aria-hidden="true"></div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📧</div>
+                            <div>
+                                <strong>Email</strong><br>
+                                <a href="mailto:DC22715@umac.mo">DC22715@umac.mo</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">📍</div>
+                            <div>
+                                <strong>Location</strong><br>
+                                University of Macau, Macau SAR
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" aria-hidden="true">🎓</div>
+                            <div>
+                                <strong>University of Macau</strong><br>
+                                Faculty of Science and Technology
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#values">Values</a>
+                <a href="#career">Career</a>
+                <a href="#interests">Interests</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-divider" aria-hidden="true"></div>
+            <p class="copyright">
+                CISC3003 Web Programming - 2026: DC227153 LEONG CHI LONG<br>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Navigation Toggle Script -->
+    <script>
+        function toggleNav() {
+            var navLinks = document.getElementById('navLinks');
+            var navToggle = document.querySelector('.nav-toggle');
+            var isActive = navLinks.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', isActive);
+        }
+
+        // Close mobile nav when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var navLinks = document.getElementById('navLinks');
+                var navToggle = document.querySelector('.nav-toggle');
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close mobile nav when pressing Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                var navLinks = document.getElementById('navLinks');
+                var navToggle = document.querySelector('.nav-toggle');
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
