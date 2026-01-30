@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+/* ================================================
+   Font Stacks
+   - Sans-serif for headings
+   - Serif for body text
+   ================================================ */
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8EAF6;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    font-family: Arial, Helvetica, "Nimbus Sans L", sans-serif;
+}
+
+/* ================================================
+   Header and Footer Styles
+   ================================================ */
+header, footer {
+    color: white;
+    background-color: #1A237E;
+    margin: 0em 4em 0.25em 4em;
+}
+
+header {
+    padding: 1.25em 1.875em 0 1.875em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 0.3125em 0 0.9375em 0;
+    font-style: italic;
+}
+
+footer {
+    padding: 0.9375em 1.875em;
+    text-align: left;
+}
+
+footer a {
+    color: #00B0FF;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 0.3125em 0;
+}
+
+/* ================================================
+   Navigation Styles
+   ================================================ */
+nav {
+    background-color: #3F51B5;
+    margin: 0 -1.875em;
+    padding: 0.625em 1.875em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 0.9375em;
+}
+
+nav ul li a {
+    color: #00B0FF;
+    text-decoration: underline;
+}
+
+/* ================================================
+   Link Hover Styles (All Links)
+   ================================================ */
+a:hover {
+    color: #00B0FF;
+    background-color: #F50057;
+}
+
+/* ================================================
+   Main Content Area
+   ================================================ */
+main {
+    background-color: #E8EAF6;
+    margin: 0 4em;
+}
+
+/* ================================================
+   Section Styles
+   ================================================ */
+section {
+    background-color: white;
+    margin-bottom: 1.25em;
+    border: 1px solid #C5CAE9;
+}
+
+section h3 {
+    background-color: #7986CB;
+    color: white;
+    margin: 0;
+    padding: 0.625em 0.9375em;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+section > div,
+section > figure {
+    padding: 0.625em 0.9375em;
+}
+
+/* ================================================
+   Figure and Image Styles
+   ================================================ */
+figure {
+    margin: 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+}
+
+figcaption {
+    color: #808d96;
+    background-color: #C5CAe9;
+    padding: 0.625em 0.9375em;
+    margin: 0 -0.9375em;
+}
+
+figcaption em {
+    font-style: italic;
+}
+
+/* ================================================
+   Content Links
+   ================================================ */
+section div a {
+    color: blue;
+}
+
+/* ================================================
+   Reviews Section
+   ================================================ */
+#reviews div {
+    border-bottom: 1px solid #eee;
+    padding: 0.625em 0.9375em;
+}
+
+#reviews div:last-child {
+    border-bottom: none;
+}
+
+.byline {
+    margin: 0 0 0.3125em 0;
+}
+
+.byline time {
+    color: #FF80AB;
+    text-decoration: underline;
+}
