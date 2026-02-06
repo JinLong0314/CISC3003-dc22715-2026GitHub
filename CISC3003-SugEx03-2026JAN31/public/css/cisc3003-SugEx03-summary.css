@@ -1,0 +1,851 @@
+/* ============================================
+   CISC3003 SugEx03 - Summary Page Styles
+   Using Float-based Layout Design
+   ============================================ */
+
+/* CSS Reset & Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #2c3e50;
+    --color-secondary: #c9a86c;
+    --color-accent: #3498db;
+    --color-success: #27ae60;
+    --color-warning: #f39c12;
+    --color-bg-light: #f8f6f3;
+    --color-bg-dark: #1a1a2e;
+    --color-text: #333;
+    --color-text-light: #fff;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Open Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg-light);
+}
+
+/* Utility Classes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Skip Link */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    z-index: 9999;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ============================================
+   Header & Navigation
+   ============================================ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-primary);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.logo:hover {
+    color: var(--color-secondary);
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+}
+
+.nav-links li {
+    float: left;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    display: block;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    line-height: 30px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--color-secondary);
+}
+
+.nav-toggle {
+    display: none;
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--color-text-light);
+    margin: 5px 0;
+}
+
+/* ============================================
+   Page Hero
+   ============================================ */
+.page-hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                url('../images/summary-hero.jpg') center/cover no-repeat;
+    color: var(--color-text-light);
+    padding: 10rem 2rem 4rem;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-hero .subtitle {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   Section Navigation
+   ============================================ */
+.section-nav {
+    background: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 70px;
+    z-index: 900;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.section-nav .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-nav a {
+    display: inline-block;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.section-nav a:hover {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+/* ============================================
+   Common Section Styles
+   ============================================ */
+section {
+    padding: 5rem 2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+.subsection-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin: 3rem 0 1.5rem;
+    color: var(--color-primary);
+}
+
+/* ============================================
+   Goals Section (Float-based)
+   ============================================ */
+.goals-section {
+    background: var(--color-bg-light);
+}
+
+.goals-content {
+    margin-top: 2rem;
+}
+
+.goals-column {
+    float: left;
+    width: calc(50% - 1rem);
+    margin-right: 2rem;
+}
+
+.goals-column:last-child {
+    margin-right: 0;
+}
+
+/* Goal Box */
+.goal-box {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.goal-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--color-bg-light);
+}
+
+.goal-icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.goal-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    display: inline;
+}
+
+.goal-list {
+    list-style: none;
+}
+
+.goal-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: flex-start;
+}
+
+.goal-list li:last-child {
+    border-bottom: none;
+}
+
+.goal-status {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    font-size: 0.8rem;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.goal-status.completed {
+    background: var(--color-success);
+    color: white;
+}
+
+.goal-status.in-progress {
+    background: var(--color-warning);
+    color: white;
+}
+
+.goal-status.pending {
+    background: #ddd;
+    color: #666;
+}
+
+/* Outcomes Grid (Float-based) */
+.outcomes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.outcome-card {
+    flex: 1 1 calc(25% - 1.5rem);
+    min-width: 220px;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.outcome-card:hover {
+    transform: translateY(-5px);
+}
+
+.outcome-number {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.outcome-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.outcome-card p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ============================================
+   Development Section (Float-based)
+   ============================================ */
+.development-section {
+    background: white;
+}
+
+.development-content {
+    margin-top: 2rem;
+}
+
+.development-areas {
+    float: left;
+    width: 55%;
+    padding-right: 3rem;
+}
+
+.action-plan {
+    float: right;
+    width: 45%;
+}
+
+.development-areas h3,
+.action-plan h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+/* Area Cards */
+.area-card {
+    background: var(--color-bg-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.area-header {
+    margin-bottom: 1rem;
+}
+
+.area-icon {
+    float: left;
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+.area-header h4 {
+    float: left;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    line-height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.progress-bar {
+    float: left;
+    width: 150px;
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--color-secondary);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+.progress-label {
+    float: right;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-secondary);
+}
+
+.area-content {
+    clear: both;
+    padding-top: 1rem;
+}
+
+.area-content ul {
+    list-style: none;
+}
+
+.area-content li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.area-content li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+
+/* Plan Timeline */
+.plan-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.plan-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--color-secondary);
+}
+
+.plan-item {
+    position: relative;
+    background: var(--color-bg-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan-item::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    background: var(--color-secondary);
+    border-radius: 50%;
+    transform: translateX(-4.5px);
+}
+
+.plan-phase {
+    display: inline-block;
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.plan-period {
+    font-size: 0.85rem;
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.plan-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.plan-item ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan-item li {
+    padding: 0.3rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.plan-item li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+}
+
+/* ============================================
+   Reflection Section (Float-based)
+   ============================================ */
+.reflection-section {
+    background: var(--color-bg-light);
+}
+
+.reflection-content {
+    margin-top: 2rem;
+}
+
+.reflection-column {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.future-column {
+    float: right;
+    width: 50%;
+}
+
+.reflection-column h3,
+.future-column h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+/* Reflection Cards */
+.reflection-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.reflection-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-bg-light);
+}
+
+.reflection-card ul {
+    list-style: none;
+}
+
+.reflection-card li {
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.reflection-card li strong {
+    color: var(--color-primary);
+}
+
+/* Direction Cards */
+.direction-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.direction-card:hover {
+    transform: translateX(5px);
+}
+
+.direction-card.featured {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.direction-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.direction-card h4 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.direction-card.featured h4 {
+    color: var(--color-secondary);
+}
+
+.direction-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Quote Box */
+.quote-box {
+    clear: both;
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 3rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.quote-box blockquote {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.quote-box cite {
+    color: var(--color-secondary);
+    font-size: 1rem;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+footer {
+    background: var(--color-bg-dark);
+    color: var(--color-text-light);
+    padding: 3rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-bottom: 2rem;
+}
+
+.footer-nav a {
+    display: inline-block;
+    color: var(--color-text-light);
+    text-decoration: none;
+    margin: 0 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    color: var(--color-secondary);
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 992px) {
+    .goals-column,
+    .development-areas,
+    .action-plan,
+    .reflection-column,
+    .future-column {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+    }
+    
+    .goals-column:first-child,
+    .reflection-column {
+        margin-bottom: 2rem;
+    }
+    
+    .development-areas,
+    .action-plan {
+        margin-bottom: 2rem;
+    }
+    
+    .outcome-card {
+        flex: 1 1 calc(50% - 1rem);
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--color-primary);
+        padding: 2rem;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    .nav-links li {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        padding: 1rem;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    .section-nav a {
+        display: block;
+        margin: 0.25rem 0;
+    }
+    
+    .outcome-card {
+        flex: 1 1 100%;
+    }
+    
+    .page-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .progress-bar {
+        display: none;
+    }
+    
+    .progress-label {
+        float: left;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .quote-box {
+        padding: 2rem 1.5rem;
+    }
+    
+    .quote-box blockquote {
+        font-size: 1.2rem;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, .nav-toggle, .section-nav {
+        display: none;
+    }
+    
+    section {
+        padding: 2rem 0;
+    }
+    
+    .goal-box, .reflection-card, .direction-card {
+        page-break-inside: avoid;
+    }
+}
