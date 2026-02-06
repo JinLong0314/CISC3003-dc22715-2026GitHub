@@ -1,0 +1,716 @@
+/* ============================================
+   CISC3003 SugEx03 - Home Page Styles
+   Using Float-based Layout Design
+   ============================================ */
+
+/* CSS Reset & Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #2c3e50;
+    --color-secondary: #c9a86c;
+    --color-accent: #3498db;
+    --color-bg-light: #f8f6f3;
+    --color-bg-dark: #1a1a2e;
+    --color-text: #333;
+    --color-text-light: #fff;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Open Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg-light);
+}
+
+/* Utility Classes */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Skip Link for Accessibility */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-primary);
+    color: var(--color-text-light);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+    z-index: 9999;
+    transition: top 0.3s ease;
+}
+
+.skip-link:focus {
+    top: 0;
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+/* ============================================
+   Header & Navigation (Float-based)
+   ============================================ */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-primary);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.logo:hover {
+    color: var(--color-secondary);
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    display: block;
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    line-height: 30px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--color-secondary);
+}
+
+/* Mobile Navigation Toggle */
+.nav-toggle {
+    display: none;
+    float: right;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--color-text-light);
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* ============================================
+   Hero Section
+   ============================================ */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
+                url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: var(--color-text-light);
+    padding: 8rem 2rem 4rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content .subtitle {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+.hero-content .tagline {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 168, 108, 0.4);
+}
+
+/* ============================================
+   Section Common Styles
+   ============================================ */
+section {
+    padding: 5rem 2rem;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background: var(--color-secondary);
+    margin-bottom: 2rem;
+}
+
+/* ============================================
+   About Section (Float-based Layout)
+   ============================================ */
+.about-section {
+    background: var(--color-bg-light);
+}
+
+.about-wrapper {
+    margin-top: 2rem;
+}
+
+.about-text-column {
+    float: left;
+    width: 55%;
+    padding-right: 3rem;
+}
+
+.about-photo-column {
+    float: right;
+    width: 45%;
+}
+
+.about-text-column p {
+    margin-bottom: 1rem;
+}
+
+.about-text-column .intro-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.about-text-column h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: var(--color-primary);
+}
+
+/* Info Table */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.info-table th,
+.info-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-table th {
+    color: var(--color-primary);
+    font-weight: 600;
+    width: 35%;
+}
+
+.info-table a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.info-table a:hover {
+    color: var(--color-primary);
+}
+
+/* Photo Gallery (Float-based) */
+.photo-gallery {
+    overflow: hidden;
+}
+
+.gallery-photo {
+    float: left;
+    width: calc(50% - 0.5rem);
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.gallery-photo:nth-child(odd) {
+    margin-right: 1rem;
+}
+
+.gallery-photo.featured {
+    float: none;
+    width: 100%;
+    height: 250px;
+    margin-right: 0;
+}
+
+.gallery-photo:hover {
+    transform: scale(1.03);
+}
+
+/* ============================================
+   Welcome Section (Float-based Cards)
+   ============================================ */
+.welcome-section {
+    background: white;
+}
+
+.welcome-content {
+    margin-top: 2rem;
+}
+
+.welcome-card {
+    float: left;
+    width: calc(25% - 1.5rem);
+    margin-right: 2rem;
+    background: var(--color-bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-card:last-child {
+    margin-right: 0;
+}
+
+.welcome-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    margin-bottom: 0.75rem;
+}
+
+.welcome-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.card-link:hover {
+    color: var(--color-primary);
+}
+
+/* ============================================
+   Contact Section (Float-based)
+   ============================================ */
+.contact-section {
+    background: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.contact-section .section-title {
+    color: var(--color-text-light);
+}
+
+.contact-info {
+    margin-top: 2rem;
+}
+
+.contact-item {
+    float: left;
+    width: calc(33.333% - 2rem);
+    margin-right: 3rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.contact-item:last-child {
+    margin-right: 0;
+}
+
+.contact-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    line-height: 50px;
+    text-align: center;
+}
+
+.contact-details {
+    overflow: hidden;
+}
+
+.contact-details strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--color-secondary);
+}
+
+.contact-details a,
+.contact-details span {
+    color: var(--color-text-light);
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    color: var(--color-secondary);
+}
+
+/* ============================================
+   Footer (Float-based)
+   ============================================ */
+footer {
+    background: var(--color-bg-dark);
+    color: var(--color-text-light);
+    padding: 3rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-nav {
+    margin-bottom: 2rem;
+}
+
+.footer-nav a {
+    display: inline-block;
+    color: var(--color-text-light);
+    text-decoration: none;
+    margin: 0 1rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    color: var(--color-secondary);
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* ============================================
+   Photo Gallery Section (Float-based)
+   ============================================ */
+.gallery-section {
+    background: white;
+}
+
+.gallery-section .section-intro {
+    color: #666;
+    max-width: 700px;
+    margin-bottom: 2rem;
+}
+
+.gallery-section .photo-gallery {
+    overflow: hidden;
+}
+
+.gallery-item {
+    float: left;
+    width: calc(33.333% - 1rem);
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--color-bg-light);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item .gallery-photo {
+    float: none;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.gallery-item figcaption {
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    color: var(--color-text);
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Gallery Responsive */
+@media (max-width: 992px) {
+    .gallery-item {
+        width: calc(50% - 0.75rem);
+    }
+
+    .gallery-item:nth-child(3n) {
+        margin-right: 1.5rem;
+    }
+
+    .gallery-item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .gallery-item:nth-child(3n),
+    .gallery-item:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+@media (max-width: 992px) {
+    .about-text-column,
+    .about-photo-column {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+    }
+    
+    .about-photo-column {
+        margin-top: 2rem;
+    }
+    
+    .welcome-card {
+        width: calc(50% - 1rem);
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .welcome-card:nth-child(2n) {
+        margin-right: 0;
+    }
+    
+    .contact-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--color-primary);
+        padding: 2rem;
+        transform: translateY(-150%);
+        transition: transform 0.3s ease;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+    }
+    
+    .nav-links li {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-links a {
+        padding: 1rem;
+    }
+    
+    .nav-toggle {
+        display: block;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .welcome-card {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .gallery-photo {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .gallery-photo.featured {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 3rem 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-content .tagline {
+        font-size: 0.9rem;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header,
+    .nav-toggle,
+    .cta-button {
+        display: none;
+    }
+    
+    section {
+        padding: 2rem 0;
+        page-break-inside: avoid;
+    }
+    
+    .hero-section {
+        min-height: auto;
+        background: none;
+        color: var(--color-text);
+    }
+    
+    .contact-section {
+        background: none;
+        color: var(--color-text);
+    }
+}

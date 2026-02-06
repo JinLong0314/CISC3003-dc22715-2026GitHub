@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2c3e50">
+    <meta name="description" content="LEONG CHI LONG (梁梓龍) - Personal Portfolio Website - Computer Science Student at University of Macau">
+    <title>Home - LEONG CHI LONG | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cisc3003-SugEx03-dc22715-home.css">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="cisc3003-sugEx03-dc22715-home.html" class="logo">Chi Long</a>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleNav()">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <nav aria-label="Main navigation">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="cisc3003-sugEx03-dc22715-home.html" class="active">Home</a></li>
+                    <li><a href="cisc3003-sugex03-dc22715-profile.html">Profile</a></li>
+                    <li><a href="cisc3003-sugex03-dc22715-summary.html">Summary</a></li>
+                    <li><a href="cisc3003-sugex03-dc22715-showcase.html">Showcase</a></li>
+                    <li><a href="cisc3003-sugex03-dc22715-qualification.html">Qualification</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1>LEONG CHI LONG</h1>
+                <p class="subtitle">梁梓龍 | Computer Science Student</p>
+                <p class="tagline">Passionate about cybersecurity, software development, and continuous learning. Building secure and innovative solutions for tomorrow.</p>
+                <a href="#about" class="cta-button">Learn More About Me</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
+                
+                <div class="about-wrapper clearfix">
+                    <!-- Left Column - Text Content -->
+                    <div class="about-text-column">
+                        <p class="intro-text">Hello! I'm Chi Long, a Year 4 Computer Science student at the University of Macau with a strong passion for cybersecurity and software development.</p>
+                        
+                        <p>I am a dedicated learner with a calm and steady personality, taking my work seriously with a proactive attitude. My technical foundation spans multiple programming languages including Python, Go, and Arduino C, and I continuously expand my knowledge in the cybersecurity field through participation in CTF competitions and innovative projects.</p>
+                        
+                        <p>Having obtained the National Information Security Test Program (NISP) Level 1 certificate, I have demonstrated strong problem-solving skills. My experience as an extracurricular teaching assistant at Saint Joseph School in Macau and as a student assistant in the IT Innovation Group at Macau Jingping Middle School has honed my teamwork and project communication abilities.</p>
+                        
+                        <h3>Quick Facts</h3>
+                        <table class="info-table">
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Full Name</th>
+                                    <td>LEONG CHI LONG (梁梓龍)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Student ID</th>
+                                    <td>DC227153</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Major</th>
+                                    <td>Computer Science</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Year</th>
+                                    <td>Year 4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">University</th>
+                                    <td>University of Macau</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Email</th>
+                                    <td><a href="mailto:DC22715@umac.mo">DC22715@umac.mo</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Right Column - Photo Gallery -->
+                    <div class="about-photo-column">
+                        <div class="photo-gallery">
+                            <img src="images/photo1.jpg" alt="Chi Long at a cybersecurity competition" class="gallery-photo">
+                            <img src="images/photo2.jpg" alt="Chi Long presenting a project" class="gallery-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Photo Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">My Photo Gallery</h2>
+                <div class="section-divider"></div>
+                <p class="section-intro">Highlights from cybersecurity competitions, hackathons, and tech events I have participated in.</p>
+                <div class="photo-gallery clearfix">
+                    <figure class="gallery-item">
+                        <img src="images/blog1.jpg" alt="MOCSCTF Rookie Hackathon 2025 staff group photo" class="gallery-photo" loading="lazy">
+                        <figcaption>菜鸟黑客松2025 工作人员合照</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/blog2.jpg" alt="2nd Great Wall Cup semifinal group photo" class="gallery-photo" loading="lazy">
+                        <figcaption>第二届长城杯半决赛合照</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/blog3.jpg" alt="PwC Hack A Day 2024 competition group photo" class="gallery-photo" loading="lazy">
+                        <figcaption>PwC Hack A Day 2024 比赛合照</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/blog4.jpg" alt="2024 National Cybersecurity Awareness Week group photo" class="gallery-photo" loading="lazy">
+                        <figcaption>2024 国家网络安全宣传周合照</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/blog5.jpg" alt="PwC Hack A Day 2023 competition group photo" class="gallery-photo" loading="lazy">
+                        <figcaption>PwC Hack A Day 2023 比赛合照</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/photo1.jpg" alt="Chi Long at a cybersecurity competition" class="gallery-photo" loading="lazy">
+                        <figcaption>Cybersecurity Competition</figcaption>
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="images/photo2.jpg" alt="Chi Long presenting a project" class="gallery-photo" loading="lazy">
+                        <figcaption>Project Presentation</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Message Section -->
+        <section id="welcome" class="welcome-section">
+            <div class="container">
+                <h2 class="section-title">Welcome to My Portfolio</h2>
+                <div class="section-divider"></div>
+                
+                <div class="welcome-content clearfix">
+                    <div class="welcome-card">
+                        <div class="card-icon">👤</div>
+                        <h3>Profile</h3>
+                        <p>Explore my values, beliefs, career aspirations, interests, and blog posts.</p>
+                        <a href="cisc3003-sugex03-dc22715-profile.html" class="card-link">View Profile →</a>
+                    </div>
+                    
+                    <div class="welcome-card">
+                        <div class="card-icon">📋</div>
+                        <h3>Summary</h3>
+                        <p>Learn about my goals, development planning, and future directions.</p>
+                        <a href="cisc3003-sugex03-dc22715-summary.html" class="card-link">View Summary →</a>
+                    </div>
+                    
+                    <div class="welcome-card">
+                        <div class="card-icon">🏆</div>
+                        <h3>Showcase</h3>
+                        <p>See my learning log, accomplishments, and statement of purpose.</p>
+                        <a href="cisc3003-sugex03-dc22715-showcase.html" class="card-link">View Showcase →</a>
+                    </div>
+                    
+                    <div class="welcome-card">
+                        <div class="card-icon">📜</div>
+                        <h3>Qualification</h3>
+                        <p>Review my education, work experience, awards, and services.</p>
+                        <a href="cisc3003-sugex03-dc22715-qualification.html" class="card-link">View Qualification →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Contact Section -->
+        <section id="quick-contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="section-divider"></div>
+                
+                <div class="contact-info clearfix">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div class="contact-details">
+                            <strong>Email</strong>
+                            <a href="mailto:DC22715@umac.mo">DC22715@umac.mo</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div class="contact-details">
+                            <strong>Location</strong>
+                            <span>University of Macau, Macau SAR</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <span class="contact-icon">🎓</span>
+                        <div class="contact-details">
+                            <strong>Faculty</strong>
+                            <span>Faculty of Science and Technology</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="cisc3003-sugEx03-dc22715-home.html">Home</a>
+                <a href="cisc3003-sugex03-dc22715-profile.html">Profile</a>
+                <a href="cisc3003-sugex03-dc22715-summary.html">Summary</a>
+                <a href="cisc3003-sugex03-dc22715-showcase.html">Showcase</a>
+                <a href="cisc3003-sugex03-dc22715-qualification.html">Qualification</a>
+            </nav>
+            <div class="footer-divider"></div>
+            <p class="copyright">
+                CISC3003 Web Programming - 2026: DC227153 LEONG CHI LONG
+            </p>
+        </div>
+    </footer>
+
+    <!-- Navigation Toggle Script -->
+    <script>
+        function toggleNav() {
+            var navLinks = document.getElementById('navLinks');
+            var navToggle = document.querySelector('.nav-toggle');
+            var isActive = navLinks.classList.toggle('active');
+            navToggle.setAttribute('aria-expanded', isActive);
+        }
+
+        // Close mobile nav when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                var navLinks = document.getElementById('navLinks');
+                var navToggle = document.querySelector('.nav-toggle');
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close mobile nav when pressing Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                var navLinks = document.getElementById('navLinks');
+                var navToggle = document.querySelector('.nav-toggle');
+                navLinks.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
+</body>
+</html>
