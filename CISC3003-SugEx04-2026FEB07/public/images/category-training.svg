@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg5)"/>
+  <!-- Graduation cap -->
+  <polygon points="200,70 260,100 200,130 140,100" fill="#00d4ff"/>
+  <rect x="195" y="100" width="10" height="30" fill="#00d4ff"/>
+  <path d="M205 130 Q240 150 260 120" fill="none" stroke="#00d4ff" stroke-width="3"/>
+  <!-- Certificate/Book -->
+  <rect x="140" y="170" width="120" height="80" fill="#e94560" rx="3"/>
+  <rect x="150" y="180" width="100" height="60" fill="#1a1a2e"/>
+  <text x="200" y="215" font-family="Arial" font-size="14" fill="#00d4ff" text-anchor="middle">CERTIFIED</text>
+  <!-- Stars -->
+  <polygon points="170,195 173,203 181,203 175,208 177,216 170,211 163,216 165,208 159,203 167,203" fill="#ffd700"/>
+  <polygon points="230,195 233,203 241,203 235,208 237,216 230,211 223,216 225,208 219,203 227,203" fill="#ffd700"/>
+  <text x="200" y="280" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Training Services</text>
+</svg>

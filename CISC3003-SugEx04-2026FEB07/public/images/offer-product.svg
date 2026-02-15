@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="bundleBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bundleBg)"/>
+  <!-- Bundle box -->
+  <rect x="100" y="80" width="300" height="350" fill="#0d1117" stroke="#e94560" stroke-width="5" rx="15"/>
+  <!-- Products inside -->
+  <rect x="130" y="120" width="80" height="80" fill="#00d4ff" opacity="0.8" rx="10"/>
+  <rect x="220" y="120" width="80" height="80" fill="#238636" opacity="0.8" rx="10"/>
+  <rect x="310" y="120" width="60" height="80" fill="#ffa657" opacity="0.8" rx="10"/>
+  <rect x="130" y="220" width="90" height="70" fill="#d2a8ff" opacity="0.8" rx="10"/>
+  <rect x="235" y="220" width="80" height="70" fill="#79c0ff" opacity="0.8" rx="10"/>
+  <rect x="180" y="310" width="120" height="70" fill="#ff7b72" opacity="0.8" rx="10"/>
+  <!-- Bundle ribbon -->
+  <rect x="170" y="400" width="160" height="50" fill="#e94560" rx="5"/>
+  <text x="250" y="433" font-family="Arial" font-size="22" font-weight="bold" fill="white" text-anchor="middle">ULTIMATE BUNDLE</text>
+  <!-- Discount badge -->
+  <circle cx="400" cy="80" r="50" fill="#00d4ff"/>
+  <text x="400" y="75" font-family="Arial" font-size="16" font-weight="bold" fill="#1a1a2e" text-anchor="middle">SAVE</text>
+  <text x="400" y="100" font-family="Arial" font-size="28" font-weight="bold" fill="#1a1a2e" text-anchor="middle">44%</text>
+</svg>

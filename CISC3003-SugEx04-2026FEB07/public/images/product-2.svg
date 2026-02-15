@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="pbg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#1a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#pbg2)"/>
+  <!-- Code editor window -->
+  <rect x="60" y="60" width="280" height="280" fill="#0d1117" stroke="#30363d" stroke-width="2" rx="10"/>
+  <rect x="60" y="60" width="280" height="30" fill="#161b22" rx="10"/>
+  <rect x="60" y="85" width="280" height="5" fill="#161b22"/>
+  <!-- Window buttons -->
+  <circle cx="80" cy="75" r="6" fill="#ff5f56"/>
+  <circle cx="100" cy="75" r="6" fill="#ffbd2e"/>
+  <circle cx="120" cy="75" r="6" fill="#27ca40"/>
+  <!-- Code lines with security highlight -->
+  <rect x="80" y="110" width="100" height="10" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="80" y="130" width="180" height="10" fill="#79c0ff" opacity="0.8" rx="2"/>
+  <rect x="80" y="150" width="140" height="10" fill="#ffa657" opacity="0.8" rx="2"/>
+  <rect x="100" y="170" width="120" height="10" fill="#ff7b72" opacity="0.8" rx="2"/>
+  <rect x="80" y="190" width="160" height="10" fill="#79c0ff" opacity="0.8" rx="2"/>
+  <!-- Security badge -->
+  <circle cx="300" cy="280" r="40" fill="#238636"/>
+  <path d="M300 260 L315 270 L315 285 L300 295 L285 285 L285 270 Z" fill="white"/>
+  <text x="200" y="370" font-family="Arial" font-size="18" font-weight="bold" fill="white" text-anchor="middle">SecureCode IDE Plugin</text>
+</svg>

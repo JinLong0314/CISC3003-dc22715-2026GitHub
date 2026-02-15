@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f3460"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg2)"/>
+  <!-- Laptop -->
+  <rect x="130" y="80" width="140" height="90" fill="none" stroke="#00d4ff" stroke-width="4" rx="5"/>
+  <rect x="140" y="95" width="120" height="60" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  <!-- Base -->
+  <polygon points="120,170 280,170 270,185 130,185" fill="#00d4ff"/>
+  <!-- Shield on screen -->
+  <path d="M200 105 L215 115 L215 135 L200 145 L185 135 L185 115 Z" fill="#e94560"/>
+  <polyline points="192,125 198,132 208,118" fill="none" stroke="white" stroke-width="2"/>
+  <!-- Mobile device -->
+  <rect x="290" y="110" width="40" height="70" rx="5" fill="none" stroke="#00d4ff" stroke-width="3"/>
+  <rect x="295" y="120" width="30" height="45" fill="#1a1a2e"/>
+  <circle cx="310" cy="175" r="3" fill="#00d4ff"/>
+  <text x="200" y="240" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">Endpoint Protection</text>
+</svg>
