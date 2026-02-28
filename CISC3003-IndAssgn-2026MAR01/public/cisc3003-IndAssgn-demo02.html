@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo 02 - LEONG CHI LONG - Tech Skills Showcase">
+  <title>Demo 02 - LEONG CHI LONG | Tech Skills</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/cisc3003-IndAssgn-demo02.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="cisc3003-IndAssgn-home.html">Chi Long</a>
+    </div>
+
+    <div class="right">
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:DC22715@umac.mo">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+
+      <a href="cisc3003-IndAssgn-home.html" class="back-link">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>Portfolio</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Chi Long 👋</h2>
+        <p>I am a Year 4 Computer Science student at the University of Macau specializing in cybersecurity. With experience in penetration testing, CTF competitions, and full-stack development, I am passionate about securing digital infrastructure and building robust web applications. Currently interning at Siemens and holding a NISP Level 1 certification.</p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#testimony">
+            <i class="fa-solid fa-pen"></i>
+            <span>Testimony</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+
+          <a href="cisc3003-IndAssgn-qualification.html">
+            <i class="fa-solid fa-certificate"></i>
+            <span>Qualification</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/头像(1.5吋).png" alt="Chi Long headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        As a cybersecurity-focused developer, I have built proficiency across multiple programming languages, security tools, and web technologies. My skill set spans from low-level security analysis to full-stack web development.
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="testimony" class="testimony-section">
+      <h2>Testimony</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="images/siemens-logo.jpeg" alt="Tony Yim portrait">
+          <p>Tony Yim</p>
+          <p>Siemens Ltd. — Head of Macau</p>
+        </div>
+
+        <div class="text">
+          "Jackie consistently delivers high-quality IT support and system integration work, demonstrating outstanding technical proficiency, problem-solving abilities, and genuine initiative — he is a quick learner and strong team player who reliably exceeds expectations."
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          I am always open to discussing cybersecurity challenges, collaboration opportunities, or potential projects. Whether you need a penetration tester, a web developer, or a programming tutor, feel free to reach out. I look forward to connecting with like-minded professionals and contributing to meaningful projects.
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10" placeholder="Tell me about your project..."></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>CISC3003 Web Programming - 2026: DC227153 LEONG CHI LONG</p>
+    <p><a href="cisc3003-IndAssgn-home.html">← Back to Main Portfolio</a></p>
+  </footer>
+
+  <!-- INLINE SCRIPT: Scroll Animations -->
+  <script>
+    (function() {
+      var observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.hero-section, .skills-section, .testimony-section, .contact-section, .skills-section .cell, .testimony-section .group, .contact-section .group').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Demo 01 - LEONG CHI LONG - Cybersecurity Portfolio" />
+    <title>Demo 01 - LEONG CHI LONG | Cybersecurity Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-demo01.css" />
+  </head>
+  <body>
+    <!-- DESKTOP NAVIGATION -->
+    <nav id="desktop-nav">
+      <div class="logo">Chi Long</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="cisc3003-IndAssgn-home.html" class="back-link">← Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- HAMBURGER NAVIGATION (Mobile) -->
+    <nav id="hamburger-nav">
+      <div class="logo">Chi Long</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="cisc3003-IndAssgn-home.html" onclick="toggleMenu()">← Portfolio</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- PROFILE / HERO SECTION -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="images/头像(1.5吋).png" alt="LEONG CHI LONG profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Leong Chi Long</h1>
+        <p class="section__text__p2">Cybersecurity Enthusiast</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('LEONG CHI LONG_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Cybersecurity &amp; Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Computer Science<br />University of Macau (Year 4)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a Year 4 Computer Science student at the University of Macau
+              with a strong passion for cybersecurity. My experience spans
+              penetration testing, CTF competitions, web development, and
+              security automation. I have interned at Siemens, mentored
+              programming students, and contributed to the MOCSCTF hackathon
+              platform. I hold a NISP Level 1 certification and have placed in
+              multiple regional cybersecurity competitions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Security &amp; Backend</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Go</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Pen Testing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Burp Suite</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Kali Linux</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend &amp; Web</h2>
+            <div class="article-container">
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="images/checkmark.png" alt="Skill icon" class="icon" />
+                <div>
+                  <h3>Web Security</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/moctf-logo.png"
+                alt="MOCSCTF Platform"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MOCSCTF2025 Platform</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/security.jpg"
+                alt="Security Automation Tools"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Security Automation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='cisc3003-IndAssgn-showcase.html'"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="images/coding.jpg"
+                alt="Portfolio Website"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Portfolio Website</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='cisc3003-IndAssgn-home.html'"
+              >
+                View Site
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:DC22715@umac.mo">DC22715@umac.mo</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="images/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="cisc3003-IndAssgn-home.html">← Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>CISC3003 Web Programming - 2026: DC227153 LEONG CHI LONG</p>
+    </footer>
+    <!-- INLINE SCRIPT: Hamburger Menu Toggle & Scroll Animations -->
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+
+      /* Scroll animation observer */
+      (function() {
+        var observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('animate-in');
+            }
+          });
+        }, observerOptions);
+
+        document.querySelectorAll('#about, #experience, #projects, #contact, .section-container, .about-containers, .experience-details-container, .contact-info-upper-container, .details-container').forEach(function(el) {
+          observer.observe(el);
+        });
+      })();
+    </script>
+  </body>
+</html>
