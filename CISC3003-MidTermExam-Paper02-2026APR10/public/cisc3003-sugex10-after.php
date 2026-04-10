@@ -25,7 +25,7 @@ if (isset($_GET['customer_id'])) {
 <html lang="en">
 
 <head>
-    <title>CISC3003 Suggested Exercise 10</title>
+    <title>DC227153 LEONG CHI LONG</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -154,6 +154,9 @@ if (isset($_GET['customer_id'])) {
             </div>  <!-- / mdl-grid -->    
 
         </section>
+        <footer style="text-align: center; padding: 20px; background-color: #f5f5f5; margin-top: 20px;">
+            <p>CISC3003 Web Programming: DC227153 LEONG CHI LONG 2026</p>
+        </footer>
     </main>    
 </div>    <!-- / mdl-layout --> 
 
